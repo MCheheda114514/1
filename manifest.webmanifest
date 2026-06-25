@@ -1,0 +1,11 @@
+{
+  "name": "Operation Board",
+  "short_name": "OpsBoard",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#050806",
+  "theme_color": "#0b1110",
+  "description": "Private tactical event board.",
+  "orientation": "any"
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#0b1110" />
+<meta name="robots" content="noindex,nofollow,noarchive" />
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="stylesheet" href="./style.css" />
+<title>Operation Access</title>
+</head>
+<body data-page="index">
+  <div class="fx fx-noise"></div><div class="fx fx-map"></div><div class="fx fx-sweep"></div>
+  <header class="topbar"><span>GTI // 活动接入</span><span id="clock">00:00:00</span></header>
+  <main class="layout" aria-labelledby="title">
+    <section class="hero-card">
+      <div class="tagline"><span></span> TACTICAL EVENT TERMINAL</div>
+      <h1 id="title">烽火行动<br><b>接入终端</b></h1>
+      <p class="brief">输入行动口令，验证临时作战席位。未授权访客将被移出队列。</p>
+      <div class="status-grid" aria-hidden="true"><i>01 / ZONE</i><i>LINK STABLE</i><i>NODE A-7</i></div>
+    </section>
+    <section class="access-card" aria-label="access panel">
+      <div class="card-head"><span>ACCESS PANEL</span><em>CLASSIFIED</em></div>
+      <label class="sr-only" for="code">行动口令</label>
+      <input id="code" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="输入行动口令" maxlength="16" />
+      <button id="enter" type="button"><span>确认接入</span></button>
+      <p id="msg" class="msg" role="status" aria-live="polite"></p>
+      <div class="mini-map" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+    </section>
+  </main>
+  <footer class="footer">OPERATION BOARD // SQUAD ACCESS ONLY</footer>
+  <script src="./app.js" defer></script>
+</body>
+</html>

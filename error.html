@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#120d0b" />
+<meta name="robots" content="noindex,nofollow,noarchive" />
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="stylesheet" href="./style.css" />
+<title>Signal Interrupted</title>
+</head>
+<body data-page="error">
+  <div class="fx fx-noise"></div><div class="fx fx-map danger"></div><div class="fx fx-sweep"></div>
+  <header class="topbar dangerbar"><span>REMOTE EVENT NODE</span><span>ERR-503</span></header>
+  <main class="error-wrap" aria-labelledby="title">
+    <button id="secret" class="question" type="button" aria-label="diagnostic marker">?</button>
+    <div class="error-box">
+      <h1 id="title">SERVER ERROR</h1>
+      <p>The remote event server encountered an unexpected error.</p>
+      <p class="tiny">Connection refused by upstream relay. Please return and try again later.</p>
+      <button id="back" class="ghost" type="button">RETURN</button>
+    </div>
+  </main>
+  <script src="./error.js" defer></script>
+</body>
+</html>

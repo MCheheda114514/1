@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#0b1110" />
+<meta name="robots" content="noindex,nofollow,noarchive" />
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="stylesheet" href="./style.css" />
+<title>Extraction Gate</title>
+</head>
+<body data-page="lock">
+  <div class="fx fx-noise"></div><div class="fx fx-map"></div><div class="fx fx-sweep"></div>
+  <header class="topbar"><span>EXFIL ROUTE // 加密撤离点</span><span>SEC-07</span></header>
+  <main class="lock-layout" aria-labelledby="title">
+    <section class="lock-visual" aria-hidden="true"><div class="ring"><div>LOCKED</div></div><div class="route-line"></div></section>
+    <section class="access-card lock-card">
+      <div class="card-head"><span>EXTRACTION AUTH</span><em>7 DIGITS</em></div>
+      <h1 id="title">撤离密钥</h1>
+      <p class="brief">根据中文数字提示输入七位密钥。</p>
+      <div id="hint" class="hint" aria-label="中文数字提示"></div>
+      <label class="sr-only" for="answer">七位数字</label>
+      <input id="answer" inputmode="numeric" pattern="[0-9]*" autocomplete="off" spellcheck="false" placeholder="七位数字" maxlength="7" />
+      <button id="unlock" type="button"><span>解除锁定</span></button>
+      <p id="result" class="msg" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+  <script src="./lock.js" defer></script>
+</body>
+</html>
